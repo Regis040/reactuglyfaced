@@ -1,0 +1,42 @@
+export const shittyStars = [
+    {
+      id: 1,
+      name: "Jacques Attali",
+      bio: "l'homme qui mumure à l'oreille de Macron",
+      img: "https://cloudfront-eu-central-1.images.arcpublishing.com/leparisien/ANTW2XHPC4CBN24HMJZ5QKTJ2Y.jpg",
+      publishedAt: "2020-10-10",
+      isPickedByTeam: true,
+    },
+    {
+      id: 2,
+      name: "Klaus Schawb",
+      bio: "Le gourou de la secte du NWO",
+      img: "https://lecourrierdesstrateges.fr/wp-content/uploads/2021/02/EoAGwRtWMAQM_FV.jpg",
+      publishedAt: "2021-10-10",
+      isPickedByTeam: true,
+    },
+    {
+      id: 3,
+      name: "Bill Gates",
+      bio: "L'homme qui vous veut du bien",
+      img: "https://qph.cf2.quoracdn.net/main-qimg-4bf5e787255452ed377f08732da61bcf.webp",
+      publishedAt: "2023-10-10",
+      isPickedByTeam: true,
+    },
+    {
+      id: 4,
+      name: "Bruno Lemaire",
+      bio: "hLe minsitre de l'économie qui ne sait pas faire une règle de trois",
+      img: "https://h16free.com/wp-content/uploads/2019/10/Bruno-Le-Maire-UMP-Photos-Creative-Commons.jpg",
+      publishedAt: "2021-10-13",
+      isPickedByTeam: false,
+    },
+    {
+      id: 5,
+      name: "Dupont-Moretti",
+      bio: "Un Ministre de la justice mis en examen",
+      img: "https://focus.nouvelobs.com/2022/03/03/57/0/1920/958/633/306/75/0/f1baa24_afp-324d4x7.jpg",
+      publishedAt: "2020-12-10",
+      isPickedByTeam: true,
+    },
+  ];
