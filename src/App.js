@@ -6,6 +6,7 @@ import Celebritydetailspage from './pages/Celebritydetailspage';
 import {BrowserRouter, Route, Routes} from "react-router-dom"
 import TvSpeakersPage from './pages/TvSpeakersPage';
 import CopyrightPage from './pages/Copyrightpage';
+import FormMessagePage from './pages/FormMessagePage';
 
 function App () {
   return (
@@ -17,6 +18,7 @@ function App () {
            <Route path="/randomcelebrity" element={<Randomcelebrity />} />  
            <Route path="/speakers" element={<TvSpeakersPage />} />   
            <Route path="/copyright" element={<CopyrightPage />} />   
+           <Route path="/message" element={<FormMessagePage />} />  
         </Routes>
       </BrowserRouter>
   );

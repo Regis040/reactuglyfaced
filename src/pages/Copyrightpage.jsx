@@ -1,4 +1,4 @@
-import {useState} from 'react';
+import {useState} from "react";
 
 function CopyrightPage () {
     // on utilise useState auquel on ajoute un paramètre et une fonction. Une valeur par défaut est donnée à ce paramètre:
@@ -10,8 +10,7 @@ function CopyrightPage () {
     const [displayText, setDisplayText] = useState (true);
 
     const handleButtonClick =() => {
-        
-        setDisplayText(false);
+            setDisplayText(!displayText);
     };
     return (
        <main>
@@ -20,4 +19,4 @@ function CopyrightPage () {
        </main>
     )
 }
-export default CopyrightPage
+export default CopyrightPage;
