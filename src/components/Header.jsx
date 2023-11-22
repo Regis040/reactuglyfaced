@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom';
 import './Header.scss'
 
 
-function Header () {
+function Header ({currentpage}) {
     return (
         <header>
             <nav className='navposition'>
@@ -13,9 +13,29 @@ function Header () {
                 <ul>
                     {/* mise ne place de link qui relient le header avec les pages
                     le "to" est le rappel du "path" déclaré dans App.jsx */}
-                    <li><Link to="/">Home</Link></li>
-                    <li><Link to="/celebrities">les célébrités de merde</Link></li>
-                    <li><Link to="/randomcelebrity">Célébrité aléatoire</Link></li>
+                    <li>
+                        {/* j'ai placé un paramètre, une props,de ma fonction Header.
+                        Cela permet de déclarer le lien de la page sur laquelle je suis en gras.
+                        */}
+                        {/*  Le "home" est appelé dans la page Homepage */}
+                        {currentpage === "home" ? (
+                            <strong>
+                                <Link to="/">Home</Link>
+                            </strong>
+                        ) : (
+                            <Link to="/">Home</Link>
+                        )}
+                    </li>
+                    <li>
+                        {currentpage === "celebrities" ? (
+                            <strong>
+                                <Link to="/celebrities">les célébrités de merde</Link>
+                            </strong>
+                        ) : (
+                                <Link to="/celebrities">les célébrités de merde</Link>
+                        )}
+                    </li>
+                                           
                 </ul>
             </nav>
         </header>

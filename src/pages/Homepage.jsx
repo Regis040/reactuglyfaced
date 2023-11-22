@@ -15,7 +15,7 @@ const pikedStars3 = pikedStars.slice(-3)
 
     return (
         <>
-            <Header />
+            <Header currentpage="home"/>
             <h2>Les 5 stars les plus détestées recemment publiées</h2>
             {theFiveShittyStars.map((star) => {
                 return (

@@ -1,13 +1,13 @@
 import Header from '../components/Header';
 import { Link } from 'react-router-dom';
 import {shittyStars} from "../utilis/celebrities-utilies";
-import "./Celebritiespage.scss"
+// import "./Celebritiespage.scss"
 
 function Celebritiespage () {
 
     return (
         <>
-            <Header />
+            <Header currentpage="celebrities" />
             <h2>Toutes les célébrités de merde</h2>
             {shittyStars.map((star) => {
                 return (
