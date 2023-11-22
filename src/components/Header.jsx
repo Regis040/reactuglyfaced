@@ -35,6 +35,15 @@ function Header ({currentpage}) {
                                 <Link to="/celebrities">les célébrités de merde</Link>
                         )}
                     </li>
+                    <li>
+                        {currentpage === "speakers" ? (
+                            <strong>
+                                <Link to="/speakers">les célébrités de merde</Link>
+                            </strong>
+                        ) : (
+                                <Link to="/speakers">les présentateurs</Link>
+                        )}
+                    </li>
                                            
                 </ul>
             </nav>

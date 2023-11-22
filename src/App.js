@@ -4,6 +4,7 @@ import Celebritiespage from './pages/Celebritiespage';
 import Randomcelebrity from './pages/Randomcelebrity';
 import Celebritydetailspage from './pages/Celebritydetailspage';
 import {BrowserRouter, Route, Routes} from "react-router-dom"
+import TvSpeakersPage from './pages/TvSpeakersPage';
 
 function App () {
   return (
@@ -12,7 +13,8 @@ function App () {
            <Route path="/" element={<Homepage />} />
            <Route path="/celebrities" element={<Celebritiespage />} />
            <Route path="/celebrities/:id" element={<Celebritydetailspage />} />
-           <Route path="/randomcelebrity" element={<Randomcelebrity />} />        
+           <Route path="/randomcelebrity" element={<Randomcelebrity />} />  
+           <Route path="/speakers" element={<TvSpeakersPage />} />      
         </Routes>
       </BrowserRouter>
   );
