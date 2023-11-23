@@ -7,9 +7,9 @@ function FormMessagePage () {
 // A l'ouverture de la page, celle-ci charge une page sans message.
 // Lorsqu'un caractère est entré dans le input, la fonction onChange renvoie celui-ci dans message par l'intermédaire
 // de setMessage. useState garde la caractère tapé, rafraichi la page et affiche ce caractère.
+// variable d'état, stocker une valeur en dehors du composant, fonction d'evenListener
 
     const [message, setMessage] = useState("");
-
     const handleMessageChange = (event)=> {
         setMessage(event.target.value);
     };
@@ -22,6 +22,6 @@ function FormMessagePage () {
             </label>
             <p>Vous avez envoyé : "{message}"</p>
         </form>
-    )
+    );
 }
 export default FormMessagePage;

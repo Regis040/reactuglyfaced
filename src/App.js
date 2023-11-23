@@ -7,6 +7,7 @@ import {BrowserRouter, Route, Routes} from "react-router-dom"
 import TvSpeakersPage from './pages/TvSpeakersPage';
 import CopyrightPage from './pages/Copyrightpage';
 import FormMessagePage from './pages/FormMessagePage';
+import LikesPage from './pages/LikesPage';
 
 function App () {
   return (
@@ -19,6 +20,7 @@ function App () {
            <Route path="/speakers" element={<TvSpeakersPage />} />   
            <Route path="/copyright" element={<CopyrightPage />} />   
            <Route path="/message" element={<FormMessagePage />} />  
+           <Route path="/likespage" element={<LikesPage />} />  
         </Routes>
       </BrowserRouter>
   );
