@@ -22,16 +22,31 @@ function CocktailsPage () {
                 //   j'affiche dans la console le rendu du tableau
         console.log(json);
                 //   j'entre les données recueillies au sein de la fonction useState
-        setCocktails(json);
+        setCocktails(json.drinks); //Le "drinks" est ajouté car ce  tableau qui contient "drinks" contient lui-même des objets qui nous intérressent
      });
     }
-    //  Les données recueillies dasn la fonction "useState" sont traitées dans le "if ... si les données sont reçues et 
+    //  Les données recueillies dans la fonction "useState" sont traitées dans le "if ... si les données sont reçues et 
     // transformer en javascript alors "Les cocktails sont prêts"".
     return (
         <main>
-            {cocktails ? (<article>Les cocktails sont préts</article>
+            {cocktails ? (
+            <>
+            {/* Je veux récupérer le nom des cocktails */}
+            {/* Je parcours mes données recuillies dans le tableau */}
+                {cocktails.map((cocktail) => {
+                    return (
+                    <article>
+                        {/* j'affiche le nom des cocktails compris dans ce tableau */}
+                         <h2>{cocktail.strDrink}</h2>
+                        <h4>fait avec {cocktail.strIngredient1}, {cocktail.strIngredient2}, {cocktail.strIngredient3}, {cocktail.strIngredient4}</h4>
+                    </article>
+                    );
+                })}
+            </>
             ) : (
-                <p>Cocktails en cours de préparation</p>
+                <p>
+                    Cocktails en cours de préparation
+                </p>
             )}
         </main>
     )
