@@ -8,6 +8,7 @@ import TvSpeakersPage from './pages/TvSpeakersPage';
 import CopyrightPage from './pages/Copyrightpage';
 import FormMessagePage from './pages/FormMessagePage';
 import LikesPage from './pages/LikesPage';
+import CocktailsPage from './pages/CocktailsPage';
 
 function App () {
   return (
@@ -21,6 +22,7 @@ function App () {
            <Route path="/copyright" element={<CopyrightPage />} />   
            <Route path="/message" element={<FormMessagePage />} />  
            <Route path="/likespage" element={<LikesPage />} />  
+           <Route path="/cocktails" element={<CocktailsPage />} /> 
         </Routes>
       </BrowserRouter>
   );

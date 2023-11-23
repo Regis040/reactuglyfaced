@@ -1,7 +1,7 @@
 import {useState} from 'react'
 function LikesPage () {
 
-    // je veux un compteur qui montre le nombre de likes déclenchés suite au clik sur un bouton
+    // je veux un compteur qui montre le nombre de "likes" déclenchés suite au clik sur un bouton
     // Je mets en place une fonction Hook, "useState"  qui va enregistrer le nombre de clic dans une variable d'état "likes"
     // et qui va relancer le composant "LikesPage" sans perdre la donnée des précédents clics. 
     // Au premier chargement, la variable "likes" prendra la valeur 0.
@@ -11,7 +11,7 @@ function LikesPage () {
 
     // Je veux pouvoir ajouter un message "vous ne pouvez pas liker plus de 5 fois" qui apparait au 6ième clic et 
     // un bouton qui permet de fermer ce même message
-    // Je mets donc en place une fonction hook useState qui prend comme valeur false.
+    // Je mets donc en place une fonction hook "useState" qui prend comme valeur false et qui sera activée au 6ième clic.
     const[displayMessage, setDisplayMessage]  = useState (false);
     // au 6ième  clic la fonction setDisplayed est engagée par "true"
     // le message apparait ainsi que le bouton qui est attaché à un eventlistener qui 
