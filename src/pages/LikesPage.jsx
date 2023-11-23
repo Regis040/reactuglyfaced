@@ -9,8 +9,10 @@ function LikesPage () {
     // c'est à dire le nombre de likes "likes" + 1.
     const [likes, setLikes] = useState(0);
     const handleLikeClick = () => {
+        {likes < 5 && (
+            setLikes(likes +1)
+        )};
         
-        setLikes(likes +1);
     };
 
     return (
@@ -18,6 +20,11 @@ function LikesPage () {
                 <button onClick={handleLikeClick}>Like</button>
                 {/* Chaque clic sur le bouton sera ajouté dasn le paragraphe ci-dessous */}
                 <p>vous avez liké {likes} fois</p>
+                {likes ==5 && (
+                    <p>Tu ne peux pas liké plus de 5 fois ... roublard ... tu n'es pas chez cdiscount ! </p>
+                )}
+
+                
             </main>
     )
 }
